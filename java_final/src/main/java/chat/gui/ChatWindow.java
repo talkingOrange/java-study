@@ -20,7 +20,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.SocketException;
-
+//README를 확인해주세요!
 public class ChatWindow {
     private Frame frame;
     private Panel pannel;
