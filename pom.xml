@@ -16,6 +16,7 @@
 		<module>practice05</module>
 		<module>final_study</module>
 		<module>network</module>
+		<module>java_final</module>
 	</modules>
 
 	<build>
