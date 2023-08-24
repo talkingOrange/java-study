@@ -19,6 +19,6 @@
 	</modules>
 
 	<build>
-		<finalName>practive01</finalName>
+		<finalName>java-study</finalName>
 	</build>
 </project>
