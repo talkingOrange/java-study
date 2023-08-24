@@ -10,12 +10,6 @@
 	<artifactId>network</artifactId>
 	<build>
 		<finalName>network</finalName>
+		<directory>${project.basedir}/custom-target</directory>
 	</build>
-	<dependencies>
-		<dependency>
-			<groupId>com.poscodx</groupId>
-			<artifactId>chapter03</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 </project>
