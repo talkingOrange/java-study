@@ -22,7 +22,7 @@ import java.net.Socket;
 import java.net.SocketException;
 
 public class ChatWindow {
-
+//git check
     private Frame frame;
     private Panel pannel;
     private Button buttonSend;
