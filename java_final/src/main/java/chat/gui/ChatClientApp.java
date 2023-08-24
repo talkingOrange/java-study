@@ -11,7 +11,7 @@ import java.net.SocketException;
 import java.util.Scanner;
 
 import chat.ChatServer;
-
+//README를 확인해주세요!
 public class ChatClientApp {
 	public static final String SERVER_IP = "192.168.0.145";
 
