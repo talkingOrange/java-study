@@ -24,7 +24,7 @@ import java.net.SocketException;
 public class ChatWindow {
     private Frame frame;
     private Panel pannel;
-    private Button buttonSend;
+    private Button buttonSend, buttonEnd;
     private TextField textField;
     private TextArea textArea;
 
@@ -35,6 +35,7 @@ public class ChatWindow {
         frame = new Frame(name);
         pannel = new Panel();
         buttonSend = new Button("Send");
+        buttonEnd= new Button("End");
         textField = new TextField();
         textArea = new TextArea(30, 80);
         this.socket = socket;
@@ -50,6 +51,15 @@ public class ChatWindow {
             }
         });
 
+        buttonEnd.setBackground(Color.RED);
+        buttonEnd.setForeground(Color.BLACK);
+        buttonEnd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                finish();
+            }
+        });
+        
         textField.setColumns(80);
         textField.addKeyListener(new KeyAdapter() {
             @Override
@@ -64,6 +74,7 @@ public class ChatWindow {
         pannel.setBackground(Color.LIGHT_GRAY);
         pannel.add(textField);
         pannel.add(buttonSend);
+        pannel.add(buttonEnd);
         frame.add(BorderLayout.SOUTH, pannel);
 
         textArea.setEditable(false);
